@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Formalize CSS</title>
+<link rel="stylesheet" href="assets/css/demo.css" />
+<script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
+<script src="assets/js/yui.formalize.js"></script>
+<script>
+// Fire it off!
+YUI().use('formalize', function(Y) {
+  Y.on('domready', function() {
+    Y.formalize.go();
+  });
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <h1>
+   Rellenar sus datos
+  </h1>
+  <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
+    <p>
+      <td>
+        <label class="error" for="user_id">
+          user_id
+        </label>
+        <br />
+        <input class="error" type="user_id" id="user_id" name="user_id" />
+      </td>
+      <br />
+      <td>
+        <label class="error" for="Apellido">
+          Apellido
+        </label>
+        <br />
+        <input class="error" type="Apellido" id="Apellido" name="Apellido" />
+      </td>
+      <br />
+      <label class="error" for="seleccionar_pais">
+        selecccionar país
+      </label>
+      <br />
+      <select class="error" id="seleccionar_pais" name="seleccionar_pais">
+        <optgroup label="Seleccionar">
+          <option value="1">Colombia</option>
+          <option value="2">Argentina</option>
+          <option value="3">Brazil</option>
+        </optgroup>
+   </select>
+   <br />   
+    </p>
+    <table class="horiz">
+      <tr>
+        <td>
+          <label class="error" for="email">
+            Email
+          </label>
+          <br />
+          <input class="error" type="email" id="email" name="email" placeholder="name@example.com" />
+        </td>
+        <td>
+          <label class="error" for="password">
+            Password
+          </label>
+          <br />
+          <input class="error" type="password" id="password" name="password" placeholder="Alphanumeric123!" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label class="error" for="tel">
+            Tel (phone)
+          </label>
+          <br />
+          <input class="error" type="tel" id="tel" name="tel" />
+        </td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <td>
+          <label class="error" for="ccusuario">
+            ccusuario
+          </label>
+          <br />
+          <input class="error" type="ccusuario" id="ccusuario" name="ccusuario" />
+        </td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <td>
+          <label class="error" for="ccpaswd">
+            ccpaswd
+          </label>
+          <br />
+          <input class="error" type="ccpaswd" id="ccpaswd" name="ccpaswd" />
+        </td>
+      </td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+      <td>
+        <label class="error" for="direccion">
+          Dirección
+        </label>
+        <br />
+        <input class="error" type="direccion" id="direccion" name="direccion" />
+      </td>
+
+    </table>
+    <p>
+      <input type="submit" value="Guardar cambios" />
+      &nbsp;
+      <input type="reset" value="Borrar datos" />
+      &nbsp;
+      <button>Button tag</button>
+    </p>
+  </form>
+</div>
+</body>
+</html>

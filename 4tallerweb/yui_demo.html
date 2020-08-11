@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Formalize CSS</title>
+<link rel="stylesheet" href="assets/css/demo.css" />
+<script src="http://yui.yahooapis.com/3.6.0/build/yui/yui-min.js"></script>
+<script src="assets/js/yui.formalize.js"></script>
+<script>
+// Fire it off!
+YUI().use('formalize', function(Y) {
+  Y.on('domready', function() {
+    Y.formalize.go();
+  });
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
+    <p>
+      <h1>
+        Rellenar sus datos
+       </h1>
+       <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
+         <p>
+           <td>
+             <label class="error" for="id_coche">
+              id_coche
+             </label>
+             <br />
+             <input class="error" type="id_coche" id="id_coche" name="id_coche" />
+           </td>
+           <br />
+           <label class="error" for="Tipo combustible">
+            Tipo combustible
+           </label>
+           <br />
+           <select class="error" id="Tipo combustible" name="Tipo combustible">
+             <optgroup label="Seleccionar">
+               <option value="1">Diesel</option>
+               <option value="2">Organica</option>
+               <option value="3">Extra</option>
+             </optgroup>
+        </select>
+        <br /> 
+        <label class="error" for="id_estado">
+          id_estado
+        </label>
+        <br />
+        <select class="error" id="id_estado" name="id_estado">
+          <optgroup label="Seleccionar">
+            <option value="1">Excelente</option>
+            <option value="2">Regular</option>
+            <option value="3">Mal</option>
+          </optgroup>
+     </select>
+     <br />
+     <label class="error" for="Tipo_coche">
+      Tipo_coche
+    </label>
+    <br />
+    <select class="error" id="Tipo_coche" name="Tipo_coche">
+      <optgroup label="Seleccionar">
+        <option value="1">Normal</option>
+        <option value="2">Electrico</option>
+      </optgroup>
+ </select>
+ <br /> 
+ <label class="error" for="id_marca">
+  id_marca
+</label>
+<br />
+<select class="error" id="id_marca" name="id_marca">
+  <optgroup label="Seleccionar">
+    <option value="1">Ferrari</option>
+    <option value="2">Toyota</option>
+    <option value="3">Volvo</option>
+  </optgroup>
+</select>
+<br /> 
+    </p>
+    <table class="horiz">
+      <tr>
+        <td>
+          <label class="error" for="user_id">
+            user_id
+          </label>
+          <br />
+          <input class="error" type="user_id" id="user_id" name="user_id" />
+        </td>
+        <br />
+        <td>
+          <label for="modelo">
+            modelo
+          </label>
+          <br />
+          <input class="error" id="modelo" name="modelo" />
+        </td>
+        <td>
+          <label for="motor">
+            modelo
+          </label>
+          <br />
+          <input class="error" id="motor" name="motor" />
+        </td>
+        <td>
+          <label for="detalle">
+            detalle
+          </label>
+          <br />
+          <input class="error" id="detalle" name="detalle" />
+        </td>
+        <td>
+          <label for="caja">
+            modelo
+          </label>
+          <br />
+          <input class="error" id="caja" name="caja" />
+        </td>
+      <tr>
+        <td>
+          <label for="Fecha_Public">
+            Fecha_Public
+          </label>
+          <br />
+          <input class="error"type="datetime-local" id="datetime-local" name="datetime-local" />
+        </td>
+        <tr>
+          <td>
+            <label for="Año">
+              Año
+            </label>
+            <br />
+            <input type="date" id="date" name="date" />
+          </td>
+      <tr>
+        <td>
+          <label for="precio">
+            precio
+          </label>
+          <br />
+          <input class="error" type="precio" id="precio" name="precio" />
+        </td>
+        <td>
+          <label for="moneda">
+            moneda
+          </label>
+          <br />
+          <input  class="error" type="moneda" id="moneda" name="moneda" />
+        </td>
+      <p>
+        <label for="CC_PICO01">
+          CC_PICO01
+        </label>
+        <br />
+        <textarea id="CC_PICO01" name="CC_PICO01" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
+      </p>
+      <p>
+        <label for="CC_PICO02">
+          CC_PICO02
+        </label>
+        <br />
+        <textarea id="CC_PICO02" name="CC_PICO02" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
+      </p>
+      <p>
+        <label for="CC_PICO03">
+          CC_PICO03
+        </label>
+        <br />
+        <textarea id="CC_PICO03" name="CC_PICO03" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
+      </p>
+      <p>
+        <label for="CC_DESTAC">
+          CC_DESTAC
+        </label>
+        <br />
+        <textarea id="CC_DESTAC" name="CC_DESTAC" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
+      </p>
+    </table>
+    <p>
+      <input type="submit" value="Guardar cambios" />
+      &nbsp;
+      <input type="reset" value="Borrar datos" />
+      &nbsp;
+    </p>
+  </form>
+</div>
+</body>
+</html>
